@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Aula 11
+        </title>
+        <meta charset="UTF-8"/>
+        <script src='js/functions.js'></script>
+    </head>
+    <body>
+       <!-- <h2>Padrão Rest</h2>-->
+       <!-- <a href="javascript:callFetchWithGet()">Get</a> -->
+       <!-- <a href="javascript:callFetchWithPost('Pikachu')"> Post</a> -->
+       <!-- <a href="javascript:callFetchWithPut(1,'Raichu')">Put</a> -->
+       <!-- <a href="javascript:callFetchWithDelete(11)">Delete</a> -->
+       <!-- <p id='json'></p> -->
+
+        <h2>Formulario Basico (Post)</h2>
+        <form id="postForm">
+             <label for="entrardj">DJ/produtor:</label>
+             <input type="text" name="DJ/produtor" id="entrardj"/>
+
+             <label for="entrarvert">Vertente:</label>
+             <input type="text" name="Vertente" id="entrarvert"/>
+
+             <label for="entrarabout">About:</label>
+             <input type="text" name="about" id="entrarabout"/>
+
+             <button type="submit" onclick="return submitPost()">Submit</button>
+        </form>
+
+
+
+        <h2>Formulario Basico (Put)</h2>
+        <form id="putForm">
+            <label>Id:
+            <input type="text" name="id"/>
+            </label>
+
+
+            <label>Pokemon:
+            <input type="text" name="DJ/produtor"/>
+            </label>
+
+            <label>Type:
+            <input type="text" name="Vertente"/>
+            </label>
+
+            <label >About:</label>
+            <input type="text" name="about" />
+            </label>
+
+            <button type="submit" onclick="return submitPut()">Submit</button>
+       </form>
+
+       <h2>Formulario Basico (Delete)</h2>
+       <form id="deleteForm">
+        <label>Id:
+        <input type="text" name="id"/>
+        </label>
+        <button type="submit" onclick="return submitDelete()">Submit</button>
+   </form>
+
+
+    </body>
+</html>
